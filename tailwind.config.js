@@ -6,19 +6,19 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				roboto: ["Roboto", "sans-serif"],
-				logo : ["Fontdiner Swanky", "cursive"]
+				logo: ["Fontdiner Swanky", "cursive"],
 			},
-			colors :{
-				primary : "#0D53CF",
-				background : {
-					white : "#FDFDFD",
-					blue : "#E7EEFA"
+			colors: {
+				primary: "#0D53CF",
+				background: {
+					white: "#FDFDFD",
+					blue: "#E7EEFA",
 				},
-				text : {
-					black : "#343434",
-					black80 : "#484848",
-					black10 : "#717171",
-				}
+				text: {
+					black: "#343434",
+					black80: "#484848",
+					black10: "#717171",
+				},
 			},
 		},
 	},
