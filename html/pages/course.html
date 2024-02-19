@@ -1,11 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../../css/input.css" />
+		<!-- LINK CSS -->
+		<link rel="stylesheet" href="../../css/output.css" />
+		<!-- LINK FLOWBITE CSS -->
+		<link
+			rel="stylesheet"
+			href="../../node_modules/flowbite/dist/flowbite.min.css" />
+		<!-- LINK GOOGLE FONT -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<!-- LINK FONTAWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+	</head>
+
+	<body class="font-roboto text-text-blac bg-background-blue no-scrollbar">
+		<header>
+			<nav
+				class="dark:bg-gray-900 w-full z-20 top-0 start-0 dark:border-gray-600">
+				<div
+					class="w-full flex h-[90px] flex-wrap items-center justify-between mx-auto md:px-[100px]">
+					<a
+						href="../index.html"
+						class="flex items-center space-x-3 rtl:space-x-reverse">
+						<span
+							class="self-center text-[36px] text-primary font-logo font-semibold whitespace-nowrap dark:text-white"
+							>I-Learn</span
+						>
+					</a>
+					<div
+						class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+						<a href="./course.html">
+							<button
+								type="button"
+								class="text-white font-roboto bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+								Login
+							<i class="fa-solid fa-right-to-bracket ml-1"></i>
+							</button>
+						</a>
+						<button
+							data-collapse-toggle="navbar-sticky"
+							type="button"
+							class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+							aria-controls="navbar-sticky"
+							aria-expanded="false">
+							<span class="sr-only">Open main menu</span>
+							<svg
+								class="w-5 h-5"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 17 14">
+								<path
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M1 1h15M1 7h15M1 13h15" />
+							</svg>
+						</button>
+					</div>
+					<div
+						class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+						id="navbar-sticky">
+						<ul
+							class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+							<li>
+								<a
+									href="../index.html"
+									class="block py-2 px-3 font-roboto text-[18px] rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+									aria-current="page"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="./aboutUs.html"
+									class="block py-2 font-roboto px-3 text-text-black text-[18px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									href="./course.html"
+									class="block py-2 px-3 font-roboto text-text-black text-[18px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+									>Course</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- head start -->
+			<section class="px-[100px] flex justify-between my-[100px]">
+				<!-- header text start -->
+				<div class="w-[610px] gap-[20px] flex flex-col">
+					<h1
+						class="text-5xl uppercase font-semibold leading-normal text-text-black">
+						Keep learning <br />
+						and <span class="text-primary">Develop</span><br />
+						Skills
+					</h1>
+					<p class="text-text-black10">
+						We help organizations of all types and sizes prepare for
+						the path ahead — wherever it leads. Our curated
+						collection of business and technical courses help
+						companies, governments, and nonprofits go further by
+						placing learning at the center of their strategies.
+					</p>
+					<a href="./course.html">
+						<button
+							type="button"
+							class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+							Enroll Now
+						</button>
+					</a>
+				</div>
+				<!-- header text end -->
+				<div class="grid grid-cols-2 grid-rows-2 gap-8">
+					<img
+						class="w-[300px] h-[300px] rounded-[15px] object-cover"
+						src="../../images/about-img/ABOUT2.jpg"
+						alt="person" />
+					<img
+						class="w-[300px] h-[300px] rounded-[15px] object-cover"
+						src="../../images/about-img/about4.jpg"
+						alt="person" />
+					<img
+						class="w-[300px] h-[300px] rounded-[15px] object-cover"
+						src="../../images/about-img/pic.jpg"
+						alt="person" />
+					<img
+						class="w-[300px] h-[300px] rounded-[15px] object-cover"
+						src="../../images/about-img/pic2.jpg"
+						alt="person" />
+				</div>
+			</section>
+			<!-- head end -->
+			<!-- promoted start -->
+			<section class="px-[100px] mb-[70px] flex justify-between">
+				<div
+					class="w-[380px] p-[10px] bg-background-white rounded-[15px] flex items-center">
+					<img
+						class="w-[150px] h-[150px] ml-3"
+						src="../../images/course-img/promote-2.png"
+						alt="devops" />
+					<div>
+						<p class="text-[20px] font-medium">
+							Become a <br />DevOpsEngineer
+						</p>
+						<p class="text-primary text-[14px]">view course</p>
+					</div>
+				</div>
+				<div
+					class="w-[380px] p-[10px] bg-background-white rounded-[15px] flex items-center">
+					<img
+						class="w-[150px] h-[150px] ml-3"
+						src="../../images/course-img/promote-3.png"
+						alt="devops" />
+					<div>
+						<p class="text-[20px] font-medium">
+							Become a <br />Graphics Designer
+						</p>
+						<p class="text-primary text-[14px]">view course</p>
+					</div>
+				</div>
+				<div
+					class="w-[380px] p-[10px] bg-background-white rounded-[15px] flex items-center">
+					<img
+						class="w-[150px] h-[150px] ml-3"
+						src="../../images/course-img/promote-4.png"
+						alt="devops" />
+					<div>
+						<p class="text-[20px] font-medium">
+							Become a <br />Cyber Security Expert
+						</p>
+						<p class="text-primary text-[14px]">view course</p>
+					</div>
+				</div>
+			</section>
+			<!-- promoted end -->
+			<!-- categories list start -->
+			<section
+				class="bg-background-white h-[50px] px-[100px] flex items-center border-b-[1px]">
+				<div
+					onclick="onSlideLeft()"
+					class="cursor-pointer hover:text-gray-500">
+					<i class="fa-solid fa-angle-left mr-5"></i>
+				</div>
+				<div
+					id="slider"
+					class="flex items-center gap-14 h-full justify-between overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide">
+					<a class="text-text-black80" href="course.html"
+						>Development</a
+					>
+					<a class="text-text-black80" href="course.html">Business</a>
+					<a class="text-text-black80" href="course.html"
+						>Finance & Accounting
+					</a>
+					<a class="text-text-black80" href="course.html"
+						>IT & Software</a
+					>
+					<a class="text-text-black80" href="course.html"
+						>Office Productivity</a
+					>
+					<a class="text-text-black80" href="course.html">Design</a>
+					<a class="text-text-black80" href="course.html"
+						>Marketing</a
+					>
+					<a class="text-text-black80" href="course.html">Designer</a>
+					<a class="text-text-black80" href="course.html">Engineer</a>
+					<a class="text-text-black80" href="course.html"
+						>Video Editor</a
+					>
+					<a class="text-text-black80" href="course.html"
+						>Game Engineer</a
+					>
+					<a class="text-text-black80" href="course.html"
+						>Graphic Design</a
+					>
+				</div>
+				<div onclick="onSlideRight()" class="cursor-pointer">
+					<i
+						class="fa-solid fa-angle-right ml-5 hover:text-gray-500"></i>
+				</div>
+			</section>
+			<!-- categories list end -->
+			<!-- all course start -->
+			<section
+				class="px-[100px] bg-background-white pt-[50px] pb-[50px]">
+				<p class="text-[36px] font-medium text-text-black">
+					Top Categories Course
+				</p>
+				<p class="text-[36px] font-medium text-primary mb-[30px]">
+					Graphic Design
+				</p>
+				<!-- border -->
+				<div class="px-[100px] border-[1px] "></div>
+				
+				<div class="grid grid-cols-5 mt-[30px] gap-[35px]">
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+				</div>
+				<a class="flex items-center cursor-pointer mt-[30px] flex-row-reverse" href="course.html">
+					<i class="fa-solid fa-angle-right ml-2 text-primary hover:text-gray-500 cursor-pointer"></i>
+					<p class="text-primary font-medium">View more course</p>
+					
+				</a>
+				
+
+				<!-- development start -->
+				<p class="text-[36px] font-medium text-primary my-[30px]">
+					Development & IT Software
+				</p>
+				<!-- border -->
+				<div class="px-[100px] border-[1px] "></div>
+				
+				<div class="grid grid-cols-5 mt-[30px] gap-[35px]">
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+					<!-- course start -->
+					<a href="course.html">
+						<div
+						class=" bg-[#F3F7FD] rounded-[15px] overflow-hidden p-[15px]">
+						<img
+							class="rounded-[15px] object-cover mb-2"
+							src="../../images/courses/javascript.png"
+							alt="javascript" />
+						<p class="font-medium text-[16px] mb-2">
+							JavaScript in 2024
+						</p>
+						<div class="text-[#F97315] text-[10px] mb-1">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p class="text-text-black10 text-[12px] mb-1">David Madas</p>
+						<p class="text-text-black10 text-[12px] mb-1">
+							Professional Javascript developer
+						</p>
+						<p class="text-text-black mb-1">$9.99</p>
+						<div class="bg-[#F2CA8C] inline-block px-3 py-1 rounded">
+							<p>Highest Rated</p>
+						</div>
+					</div>
+					</a>
+					<!-- course end -->
+				</div>
+				<a class="flex items-center cursor-pointer mt-[30px] mb-[50px] flex-row-reverse" href="course.html">
+					<i class="fa-solid fa-angle-right ml-2 text-primary hover:text-gray-500 cursor-pointer"></i>
+					<p class="text-primary font-medium">View more course</p>
+					
+				</a>
+			</section>
+			<!-- all course end -->
+		</main>
+		<footer class="mb-[50px] px-[100px] mt-[50px]">
+        <div class="grid grid-cols-2">
+            <div>
+                <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span
+                        class="self-center text-[36px] text-primary font-logo font-semibold whitespace-nowrap dark:text-white">I-Learn</span>
+                </a>
+                <p class="text-text-black10 w-[450px]">up skill for the better future <br>
+                    with I-LEARN you will develop your skill to be a professional on your specific skill and a better
+                    future</p>
+            </div>
+            <div class="text-right">
+                <p class="text-text-black10 mb-[10px]">Teams</p>
+                <p class="text-text-black10 mb-[10px]">Case Studies</p>
+                <p class="text-text-black10 mb-[10px]">@ 2024 I-Learn. All right reserved </p>
+                <div class="flex gap-2 flex flex-row-reverse">
+                    <img src="../../images/icon/icons8-twitterx-50.png" alt="twitter" width="40px">
+                    <img src="../../images/icon/icons8-instagram-48.png" alt="instagram" width="40px">
+                    <img src="../../images/icon/icons8-facebook-48.png" alt="facebook" width="40px">
+                    <img src="../../images/icon/icons8-tik-tok-50.png" alt="tiktok" width="40px">
+                </div>
+            </div>
+        </div>
+    </footer> 
+	</body>
+	<script src="../../js/index.js"></script>
+	<script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </html>
