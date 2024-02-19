@@ -1252,6 +1252,11 @@ input:checked + .toggle-bg{
   margin-bottom: 30px;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -1346,6 +1351,22 @@ input:checked + .toggle-bg{
 
 .mb-\[35px\]{
   margin-bottom: 35px;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.me-3{
+  margin-inline-end: 0.75rem;
+}
+
+.ms-5{
+  margin-inline-start: 1.25rem;
 }
 
 .box-border{
@@ -1519,6 +1540,10 @@ input:checked + .toggle-bg{
   height: 30px;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1625,6 +1650,10 @@ input:checked + .toggle-bg{
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-screen-xl{
+  max-width: 1280px;
 }
 
 .flex-1{
@@ -2778,6 +2807,11 @@ input:checked + .toggle-bg{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .bg-\[\#B4EDCA\]{
   --tw-bg-opacity: 1;
   background-color: rgb(180 237 202 / var(--tw-bg-opacity));
@@ -3073,6 +3107,11 @@ input:checked + .toggle-bg{
   padding-right: 40px;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-\[50px\]{
   padding-bottom: 50px;
 }
@@ -3206,6 +3245,11 @@ input:checked + .toggle-bg{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold{
@@ -3823,6 +3867,10 @@ input:checked + .toggle-bg{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover{
+  text-decoration-line: underline;
+}
+
 .before\:hover\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
@@ -4011,6 +4059,43 @@ input:checked + .toggle-bg{
 }
 
 @media (min-width: 640px){
+  .sm\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:items-center{
+    align-items: center;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
+  }
+
+  .sm\:justify-between{
+    justify-content: space-between;
+  }
+
+  .sm\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .sm\:text-center{
+    text-align: center;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
@@ -4031,6 +4116,10 @@ input:checked + .toggle-bg{
 
   .md\:mb-\[70px\]{
     margin-bottom: 70px;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:flex{
@@ -4091,6 +4180,10 @@ input:checked + .toggle-bg{
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:gap-\[80px\]{
@@ -4174,8 +4267,18 @@ input:checked + .toggle-bg{
 }
 
 @media (min-width: 1024px){
+  .lg\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover){
