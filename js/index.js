@@ -1,9 +1,9 @@
 const slider = document.querySelector('#slider');
 
 function onSlideLeft() {
-    slider.scrollLeft -= 500;
+    slider.scrollLeft -= 300;
 }
 
 function onSlideRight() {
-    slider.scrollLeft += 500;
+    slider.scrollLeft += 300;
 }
