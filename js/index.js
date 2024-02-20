@@ -1,4 +1,3 @@
-const Aos = require("aos");
 
 const slider = document.querySelector("#slider");
 
@@ -9,3 +8,4 @@ function onSlideLeft() {
 function onSlideRight() {
 	slider.scrollLeft += 300;
 }
+const Aos = require("aos");
