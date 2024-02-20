@@ -24,10 +24,10 @@
 <body class="font-roboto text-text-blac bg-background-blue">
     <header>
         <nav class="dark:bg-gray-900 w-full z-20 top-0 start-0 dark:border-gray-600">
-            <div class="w-full flex h-[90px] flex-wrap items-center justify-between mx-auto md:px-[100px]">
+            <div class="w-full flex h-[90px] flex-wrap items-center justify-between md:px-[50px] lg:px-[100px]">
                 <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <span
-                        class="self-center text-[36px] text-primary font-logo font-semibold whitespace-nowrap dark:text-white">I-Learn</span>
+                        class="self-center ml-5 md:ml-0 text-[36px] text-primary font-logo font-semibold whitespace-nowrap dark:text-white">I-Learn</span>
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <a href="./course.html">
@@ -71,14 +71,15 @@
     </header>
     <main>
         <!-- head start -->
-        <section class="px-[100px] flex justify-between items-center my-[100px]">
-            <img class="w-[300px] object-cover" src="../../images/about-img/online.png" alt="header-images" />
+        <section class="px-[20px] md:px-[50px] lg:px-[100px] flex justify-between items-center mb-[100px] md:my-[100px] flex-col md:flex-row lg:flex-row">
+            <img class="md:w-[200px] lg:w-[300px] object-cover" src="../../images/about-img/online.png" alt="header-images" />
             <!-- header text start -->
-            <div class="w-[610px] gap-[20px] flex flex-col items-center">
-                <h1 class="text-5xl text-center uppercase font-semibold leading-normal text-text-black">
+            <div class="md:w-[610px] gap-[20px] flex flex-col items-center">
+                <h1 class="text-[36px] md:text-[36px] lg:text-5xl text-center uppercase font-semibold leading-normal text-text-black">
                     BEST ACADEMIC <br />
                     ONLINE LEARNING
-                    <span class="text-primary">PLATFORM</span>
+                    <span class="text-primary hidden md:block">PLATFORM</span> <br>
+                    <span class="text-primary md:hidden">PLATFORM</span>
                 </h1>
                 <a href="./course.html">
                     <button type="button"
@@ -88,23 +89,23 @@
                 </a>
             </div>
             <!-- header text end -->
-            <img class="w-[300px] object-cover" src="../../images/about-img/book.png" alt="header-images" />
+            <img class="md:w-[200px] lg:w-[300px] object-cover hidden md:block" src="../../images/about-img/book.png" alt="header-images" />
         </section>
         <!-- head end -->
         <!-- why choose us start -->
-        <section class="px-[100px] py-[70px] bg-background-white">
-            <div class="grid grid-cols-2 items-center">
-                <div class="grid grid-cols-2 grid-rows-2 h-[680px] gap-x-10 w-[400px]">
-                    <img class="object-cover w-[200px] rounded-[15px] h-[300px]" src="../../images/about-img/pic.jpg"
+        <section class="px-[20px] md:px-[50px] lg:px-[100px] py-[70px] bg-background-white">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-[120px]">
+                <div class="grid order-2 lg:order-1 grid-cols-2 h-[640px] md:h-[680px] gap-x-5 md:gap-x-10 mt-10 md:mt-0">
+                    <img class="object-cover  rounded-[15px] h-[300px]" src="../../images/about-img/pic.jpg"
                         alt="person1" />
-                    <img class="object-cover w-[200px] rounded-[15px] h-[300px] self-end"
+                    <img class="object-cover   rounded-[15px] h-[300px] self-end"
                         src="../../images/about-img/pexels-fauxels-3184357.jpg" alt="person1" />
-                    <img class="object-cover w-[200px] rounded-[15px] h-[300px]" src="../../images/about-img/about3.jpg"
+                    <img class="object-cover  rounded-[15px] h-[300px]" src="../../images/about-img/about3.jpg"
                         alt="person1" />
-                    <img class="object-cover w-[200px] rounded-[15px] h-[300px] self-end"
+                    <img class="object-cover rounded-[15px] h-[300px] self-end"
                         src="../../images/about-img/about4.jpg" alt="person1" />
                 </div>
-                <div>
+                <div class="order-1 lg:order-2 md:mb-5 lg:mb-0">
                     <p class="text-[20px] text-primary font-medium mb-[10px]">
                         Why Choose Us
                     </p>
@@ -113,10 +114,10 @@
                     </p>
                     <p class="text-text-black10 mb-[15px]">
                         Whether you want to learn a new skill, train your
-                        teams, or share what you know with the world, you’re
+                        teams, or share what you know with the world, you're
                         in the right place. As a leader in online learning
                         When Angela switched careers from surgery to
-                        development, she had no idea the impact she’d later
+                        development, she had no idea the impact she'd later
                         have on millions of learners.
                     </p>
                     <div class="flex items-center mb-[10px]">
@@ -158,7 +159,7 @@
         </section>
         <!-- why choose us end -->
         <!-- testimonal start-->
-        <section class="mt-[100px] px-[100px] mb-[100px] pb-[70px]">
+        <section class="mt-[100px] px-[20px] md:px-[50px] lg:px-[100px] mb-[100px] pb-[70px]">
             <div class="text-center">
                 <p class="text-[36px] font-medium text-text-black">
                     Testimonials
@@ -171,13 +172,13 @@
                     privilege.Learning is the source of human progress.
                 </p>
             </div>
-            <div class="mt-[50px] grid grid-cols-3 gap-[50px]">
-                <div class="p-[30px] bg-background-white rounded-[15px]">
-                    <div class="flex items-center mb-[30px]">
+            <div class="mt-[50px] grid md:grid-cols-3 gap-[20px] lg:gap-[50px]">
+                <div class="p-[30px] md:p-[15px] lg:p-[30px] bg-background-white rounded-[15px]">
+                    <div class="flex items-center md:mb-5 lg:mb-[30px] md:flex-col lg:flex-row">
                         <img class="w-[100px] h-[100px] rounded-full" src="../../images/about-img/SOPHEAKTRA.JPG"
                             alt="sopheaktra" />
-                        <div class="ml-5">
-                            <p class="text-[18px] font-medium text-text-black">
+                        <div class="ml-5 md:mt-5 flex flex-col justify-center items-start  md:mr-5 lg:mr-0 lg:mt-0">
+                            <p class="text-[15px] lg:lg:text-[18px]  font-medium text-text-black">
                                 YITH SOPHEAKTRA
                             </p>
                             <p class="uppercase text-[12px] text-primary">
@@ -198,16 +199,42 @@
                         solution for our employees and their careers.
                     </p>
                 </div>
-                <div class="p-[30px] bg-background-white rounded-[15px]">
-                    <div class="flex items-center mb-[30px]">
+                <div class="p-[30px] md:p-[15px] lg:p-[30px] bg-background-white rounded-[15px]">
+                    <div class="flex items-center justify-center md:mb-5 lg:mb-[30px] md:flex-col lg:flex-row">
+                        <img class="w-[100px] h-[100px] rounded-full" src="../../images/about-img/kdey.jpg"
+                            alt="sopheaktra" />
+                        <div class="ml-5 md:mt-5 flex flex-col justify-center items-start md:mr-5 lg:mr-0 lg:mt-0">
+                            <p class="text-[15px] lg:lg:text-[18px] font-medium text-text-black uppercase">
+                                Phalphea pheakdey
+                            </p>
+                            <p class="uppercase text-[12px] text-primary">
+                                Grphaics Designer
+                            </p>
+                            <div class="text-[#F97315]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-black10">
+                        I-Learn responds to the needs of the business in an
+                        agile and global manner. It's truly the best
+                        solution for our employees and their careers.
+                    </p>
+                </div>
+                <div class="p-[30px] md:p-[15px] lg:p-[30px] bg-background-white rounded-[15px]">
+                    <div class="flex items-center md:mb-5 lg:mb-[30px] md:flex-col lg:flex-row">
                         <img class="w-[100px] h-[100px] rounded-full" src="../../images/about-img/davan.jpg"
                             alt="sopheaktra" />
-                        <div class="ml-5">
-                            <p class="text-[18px] font-medium text-text-black">
+                        <div class="ml-5 md:mt-5 flex flex-col justify-center items-start md:mr-5 lg:mr-0 lg:mt-0">
+                            <p class="text-[15px] lg:lg:text-[18px] font-medium text-text-black">
                                 ING DAVAN
                             </p>
                             <p class="uppercase text-[12px] text-primary">
-                                Backed developer
+                                Front-End Developer
                             </p>
                             <div class="text-[#F97315]">
                                 <i class="fa-solid fa-star"></i>
@@ -224,38 +251,13 @@
                         solution for our employees and their careers.
                     </p>
                 </div>
-                <div class="p-[30px] bg-background-white rounded-[15px]">
-                    <div class="flex items-center mb-[30px]">
-                        <img class="w-[100px] h-[100px] rounded-full" src="../../images/about-img/kdey.jpg"
-                            alt="sopheaktra" />
-                        <div class="ml-5">
-                            <p class="text-[18px] font-medium text-text-black uppercase">
-                                PhalPhea Peakdey
-                            </p>
-                            <p class="uppercase text-[12px] text-primary">
-                                Backed developer
-                            </p>
-                            <div class="text-[#F97315]">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-text-black10">
-                        I-Learn responds to the needs of the business in an
-                        agile and global manner. It's truly the best
-                        solution for our employees and their careers.
-                    </p>
-                </div>
+
             </div>
         </section>
         <!-- testimonal end-->
     </main>
     <!-- footer start -->
-	<footer class="bg-background-blue px-[20px] md:px-[100px] mt-[50px] dark:bg-gray-900">
+	<footer class="bg-background-blue px-[20px] md:px-[50px] lg:px-[100px] mt-[20px] md:mt-0 lg:mt-[50px] dark:bg-gray-900">
 		<div class=" w-full p-4 py-6 lg:py-8">
 			<div class="md:flex md:justify-between">
 				<div class="mb-6 md:mb-0">
