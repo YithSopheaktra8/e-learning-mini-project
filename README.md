@@ -36,8 +36,7 @@
  </a>
 <br/>
 <br />
-<h4>I-Learn is a static website that build for mini project for CSTAD requirement of studying IT Expert 
-    Courses
+<h4>I-Learn is a static website. It's a mini project for CSTAD requirement of studying IT Expert Courses
 </h4>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
